@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "invasivelens"
+version = "0.1.0"
+description = "Image-classification pipeline for invasive plant recognition in Portugal."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "torch>=2.2",
+  "torchvision>=0.17",
+  "numpy>=1.26",
+  "pandas>=2.0",
+  "scikit-learn>=1.1",
+  "scikit-image>=0.22",
+  "statsmodels>=0.14",
+  "pillow>=10.0",
+  "pygbif>=0.6.3",
+  "gbif-dl>=0.1.1",
+  "requests>=2.31",
+  "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools]
+py-modules = ["config"]
+
+[tool.setuptools.packages.find]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra -m 'not integration'"
+markers = [
+  "integration: runs the synthetic end-to-end pipeline and rewrites local artifacts",
+]

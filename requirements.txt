@@ -1,0 +1,13 @@
+torch>=2.2
+torchvision>=0.17
+numpy>=1.26
+pandas>=2.0
+scikit-learn>=1.1
+scikit-image>=0.22
+statsmodels>=0.14
+pillow>=10.0
+pygbif>=0.6.3
+gbif-dl>=0.1.1
+requests>=2.31
+tqdm>=4.66
+pytest>=8.0
