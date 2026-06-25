@@ -1,6 +1,6 @@
 # InvasiveLens
 
-An image classification pipeline for invasive plant species identification and management in Portugal, built as a master's thesis project.
+An image classification pipeline for invasive plant species identification and management in Portugal.
 
 InvasiveLens takes a photograph of a plant, identifies the species using a fine-tuned deep learning model, and produces a risk assessment with management recommendations. It goes beyond classification — the decision engine assigns risk levels (CRITICAL, HIGH, MEDIUM, LOW, NATIVE) and outputs specific actions like "contain within 30 days" or "schedule field verification."
 
@@ -206,8 +206,5 @@ pytest
 
 ## Further Reading
 
-- [TECHNICAL_REPORT.md](TECHNICAL_REPORT.md) — Full technical write-up with methodology details
-- [DEFENSE_QA.md](DEFENSE_QA.md) — Anticipated defense questions and answers
-- [MASTER_DEFENSE_GUIDE.md](MASTER_DEFENSE_GUIDE.md) — Study notes for the thesis defense
-- [PRESENTATION_TEMPLATE.md](PRESENTATION_TEMPLATE.md) — Slide outlines for the defense presentation
+- [TECHNICAL_REPORT.md](TECHNICAL_REPORT.md) — Full project report with methodology, results, and analysis
 - [config.py](config.py) — All configuration: species pairs, hyperparameters, spatial stratification settings
